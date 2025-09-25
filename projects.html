@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Projects — Sineth Deshan</title>
+
+<!-- CSS -->
 <link rel="stylesheet" href="css/navbar.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
@@ -16,193 +18,112 @@
   }
 
   /* Hero Section */
-  .projects-hero {
-    text-align: center;
-    margin: 3rem 0;
-  }
+  .projects-hero { text-align:center; margin:3rem 0; }
   .projects-hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(90deg,#7c3aed,#5b21b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size:2.5rem; font-weight:700;
+    background:linear-gradient(90deg,#7c3aed,#5b21b6);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
   }
-  .projects-hero p {
-    font-size: 1.1rem;
-    color: #9aa4b2;
-    margin-top: 0.5rem;
-  }
+  .projects-hero p { font-size:1.1rem; color:#9aa4b2; margin-top:0.5rem; }
 
   /* Projects Grid */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 0 2rem;
-    margin-bottom: 3rem;
-  }
+  .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:0 2rem; margin-bottom:3rem; }
 
   /* Project Card */
   .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 1.5rem;
+    background: rgba(255,255,255,0.05); backdrop-filter: blur(12px);
+    border-radius:16px; padding:1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display:flex; flex-direction:column; justify-content:space-between;
   }
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(124,58,237,0.3);
-  }
-
-  .project-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-
-  .project-card h3 {
-    margin-bottom: 0.5rem;
-    color: #e6eef6;
-    font-size: 1.25rem;
-  }
-
-  .project-card p {
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-  }
+  .project-card:hover { transform:translateY(-5px); box-shadow:0 10px 25px rgba(124,58,237,0.3); }
+  .project-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; margin-bottom:1rem; }
+  .project-card h3 { margin-bottom:0.5rem; color:#e6eef6; font-size:1.25rem; }
+  .project-card p { color:#cbd5e1; font-size:0.95rem; margin-bottom:0.75rem; }
 
   /* Tags */
-  .tags .tag {
-    display: inline-block;
-    padding: 3px 8px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    font-size: 0.75rem;
-    border-radius: 12px;
-    background: rgba(124,58,237,0.2);
-    color: #e6eef6;
-  }
+  .tags .tag { display:inline-block; padding:3px 8px; margin-right:5px; margin-bottom:5px; font-size:0.75rem; border-radius:12px; background:rgba(124,58,237,0.2); color:#e6eef6; }
 
   /* View Button */
   .btn-project {
-    background: linear-gradient(90deg,#7c3aed,#5b21b6);
-    border: none;
-    color: #fff;
-    padding: 0.4rem 0.9rem;
-    font-size: 0.85rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    align-self: flex-start;
+    background: linear-gradient(90deg,#7c3aed,#5b21b6); border:none; color:#fff;
+    padding:0.4rem 0.9rem; font-size:0.85rem; border-radius:8px; transition: all 0.3s ease; align-self:flex-start;
   }
-  .btn-project:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(124,58,237,0.3);
-  }
+  .btn-project:hover { transform:translateY(-2px); box-shadow:0 6px 18px rgba(124,58,237,0.3); }
 
   /* Footer */
-  footer {
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 0.85rem;
-    color: #9aa4b2;
-    border-top: 1px solid rgba(255,255,255,0.05);
-  }
+  footer { text-align:center; padding:2rem 0; font-size:0.85rem; color:#9aa4b2; border-top:1px solid rgba(255,255,255,0.05); }
 
-  @media(max-width: 576px) {
-    .projects-grid { padding: 0 1rem; }
-  }
+  @media(max-width:576px){ .projects-grid { padding:0 1rem; } }
 </style>
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark py-3 px-4 shadow-sm">
-   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<!-- ================= Fixed Mobile-Responsive Navbar ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Sineth Deshan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item ms-3">
-          <div class="navbar-profile">
-            <img src="images/MyPP.jpg" alt="Sineth Deshan" class="nav-profile-pic">
+          <div class="navbar-profile d-flex align-items-center">
+            <img src="images/MyPP.jpg" alt="Sineth Deshan" class="nav-profile-pic rounded-circle" style="width:35px; height:35px;">
             <span class="status-badge"></span>
           </div>
         </li>
       </ul>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <main>
-  <!-- ================= Projects Section ================= -->
-<section class="container my-5">
-  <!-- Hero -->
-  <div class="text-center mb-4">
-  <h1 id="projects-title" style="font-weight:800; font-size:2.5rem; 
-      background:linear-gradient(90deg,#7c3aed,#5b21b6); 
-      -webkit-background-clip:text; 
-      -webkit-text-fill-color:transparent; 
-      opacity:0; 
-      transform:translateY(20px); 
-      transition: all 1s ease;">
-    My Projects
-  </h1>
-</div>
+  <section class="container my-5">
+    <div class="text-center mb-4">
+      <h1 id="projects-title" style="font-weight:800; font-size:2.5rem; background:linear-gradient(90deg,#7c3aed,#5b21b6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; opacity:0; transform:translateY(20px); transition: all 1s ease;">My Projects</h1>
+    </div>
+    <p style="font-size:1rem; font-weight:600; color:#cbd5e1; margin-top:0.5rem; letter-spacing:0.3px;">A collection of my recent works including web apps, SaaS tools, and mini experiments.</p>
 
-<p style="font-size:1rem; 
-          font-weight:600; 
-          color:#cbd5e1; 
-          margin-top:0.5rem;
-          letter-spacing:0.3px;">
-  A collection of my recent works including web apps, SaaS tools, and mini experiments.
-</p>
+    <!-- Nav Pills Filter -->
+    <ul class="nav nav-pills justify-content-center mb-4" id="project-filter" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-filter="all" type="button">All</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="webapp" type="button">Web Apps</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="saas" type="button">SaaS</button></li>
+      <li class="nav-item"><button class="nav-link" data-filter="mini-tool" type="button">Mini Tools</button></li>
+    </ul>
 
-
-    
-  <!-- Bootstrap Nav Pills Filter -->
-  <ul class="nav nav-pills justify-content-center mb-4" id="project-filter" role="tablist">
-    <li class="nav-item"><button class="nav-link active" data-filter="all" type="button">All</button></li>
-    <li class="nav-item"><button class="nav-link" data-filter="webapp" type="button">Web Apps</button></li>
-    <li class="nav-item"><button class="nav-link" data-filter="saas" type="button">SaaS</button></li>
-    <li class="nav-item"><button class="nav-link" data-filter="mini-tool" type="button">Mini Tools</button></li>
-  </ul>
-
-  <!-- Projects Grid -->
-  <div class="row g-4" id="projects-grid">
-    <!-- Project 1 -->
-    <div class="col-lg-3 col-md-6 col-sm-12" data-category="webapp">
-      <div class="card bg-dark text-light h-100 shadow-sm border-0"
-           style="padding:1rem; border-radius:16px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer;"
-           onmouseover="this.style.transform='translateY(-5px) scale(1.02)'; this.style.boxShadow='0 10px 25px rgba(124,58,237,0.3)';"
-           onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">
-        <img src="images/vehicle.jpg" class="card-img-top" alt="Vehicle Management" style="height:140px; object-fit:cover; border-radius:10px; margin-bottom:0.8rem;">
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:1.15rem; margin-bottom:0.4rem;">Vehicle Management</h5>
-          <p class="card-text" style="font-size:0.88rem; color:#cbd5e1; margin-bottom:0.6rem;">Fleet CRUD, booking, reports, PDF export</p>
-          <div class="mb-2">
-            <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px; margin-right:4px;">React</span>
-            <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px; margin-right:4px;">Node.js</span>
-            <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px;">MongoDB</span>
+    <!-- Projects Grid -->
+    <div class="row g-4" id="projects-grid">
+      <!-- Project Cards go here (same as your existing code) -->
+      <!-- Example Project 1 -->
+      <div class="col-lg-3 col-md-6 col-sm-12" data-category="webapp">
+        <div class="card bg-dark text-light h-100 shadow-sm border-0" style="padding:1rem; border-radius:16px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer;"
+          onmouseover="this.style.transform='translateY(-5px) scale(1.02)'; this.style.boxShadow='0 10px 25px rgba(124,58,237,0.3)';"
+          onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">
+          <img src="images/vehicle.jpg" class="card-img-top" alt="Vehicle Management" style="height:140px; object-fit:cover; border-radius:10px; margin-bottom:0.8rem;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:1.15rem; margin-bottom:0.4rem;">Vehicle Management</h5>
+            <p class="card-text" style="font-size:0.88rem; color:#cbd5e1; margin-bottom:0.6rem;">Fleet CRUD, booking, reports, PDF export</p>
+            <div class="mb-2">
+              <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px; margin-right:4px;">React</span>
+              <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px; margin-right:4px;">Node.js</span>
+              <span class="badge" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.7rem; padding:2px 6px;">MongoDB</span>
+            </div>
+            <a href="#" class="btn btn-sm" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.8rem; padding:0.35rem 0.8rem; border-radius:8px;">View Project</a>
           </div>
-          <a href="https://drive.google.com/drive/folders/1Z23s17wG5lkJI-0zFJW9kCk34xKYoO6T?usp=drive_link" class="btn btn-sm" style="background:linear-gradient(90deg,#7c3aed,#5b21b6); color:#fff; font-size:0.8rem; padding:0.35rem 0.8rem; border-radius:8px; transition:0.3s;"
-             onmouseover="this.style.background='linear-gradient(90deg,#5b21b6,#7c3aed)';"
-             onmouseout="this.style.background='linear-gradient(90deg,#7c3aed,#5b21b6)';">View Project</a>
         </div>
       </div>
-    </div>
+      <!-- Add other projects similarly -->
 
-    <!-- Project 2 -->
+      <!-- Project 2 -->
     <div class="col-lg-3 col-md-6 col-sm-12" data-category="saas">
       <div class="card bg-dark text-light h-100 shadow-sm border-0"
            style="padding:1rem; border-radius:16px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer;"
@@ -244,9 +165,16 @@
       </div>
     </div>
   </div>
-</section>
+    </div>
+  </section>
+</main>
 
-<!-- ================= Filter JS ================= -->
+<footer>Made with ♥ • Sineth Deshan</footer>
+
+<!-- JS (Bootstrap for mobile toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Filter JS -->
 <script>
 const filterButtons = document.querySelectorAll('#project-filter .nav-link');
 const projectCards = document.querySelectorAll('#projects-grid .col-lg-3');
@@ -269,20 +197,14 @@ filterButtons.forEach(btn => {
     });
   });
 });
-</script>
 
-<script>
 window.addEventListener('load', () => {
   const title = document.getElementById('projects-title');
   setTimeout(() => {
     title.style.opacity = 1;
     title.style.transform = 'translateY(0)';
-  }, 100); // slight delay for smooth effect
+  }, 100);
 });
 </script>
-
-
-
-<footer>Made with ♥ • Sineth Deshan</footer>
 </body>
 </html>
