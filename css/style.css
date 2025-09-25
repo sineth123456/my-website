@@ -1,0 +1,360 @@
+/* ================= GENERAL STYLING ================= */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f1724, #1e293b);
+  color: #e6eef6;
+}
+
+/* ================= NAVBAR ================= */
+
+/* Navbar profile picture */
+.navbar-profile {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #7c3aed;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-profile-pic:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #7c3aed, 0 0 20px rgba(124, 58, 237, 0.5);
+}
+
+/* Animated gradient background for navbar */
+.navbar {
+  position: relative;
+  background: linear-gradient(270deg, #0b1220, #1e293b, #0b1220);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  transition: background 0.3s ease;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar links hover underline effect */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #7c3aed;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #7c3aed !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hamburger button rotation */
+.navbar-toggler {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg);
+}
+
+/* Status badge (online indicator) animation */
+.status-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: #22c55e;
+  border: 2px solid #0f1724;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.7; }
+}
+
+/* ================= HERO SECTION ================= */
+
+/* Profile image with glass effect */
+.profile-pic-glass {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.profile-pic-glass img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-pic-glass:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 20px 40px rgba(124,58,237,0.6), 0 0 20px rgba(124,58,237,0.3);
+}
+
+/* Hero text */
+.hero-text {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #e6eef6;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #a0aec0;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* Highlighted gradient text */
+.highlight {
+  background: linear-gradient(90deg, #7c3aed, #5b21b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #7c3aed, #5b21b6);
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124,58,237,0.5);
+}
+
+/* Glass card */
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(124,58,237,0.6), 0 0 30px rgba(124,58,237,0.3);
+}
+
+/* Gradient overlay animation for glass card */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(124,58,237,0.3), rgba(91,33,182,0.3), rgba(124,58,237,0.3));
+  transform: rotate(45deg);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { transform: rotate(0deg) translateX(0%); }
+  50% { transform: rotate(45deg) translateX(20%); }
+  100% { transform: rotate(0deg) translateX(0%); }
+}
+
+.glass-card p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #e6eef6;
+}
+
+.glass-card strong {
+  color: #ffffff;
+}
+
+/* Fade-in animation for elements */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.fade-in.delay-1 { animation-delay: 0.3s; }
+.fade-in.delay-2 { animation-delay: 0.6s; }
+.fade-in.delay-3 { animation-delay: 0.9s; }
+.fade-in.delay-4 { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .profile-pic-glass { width: 140px; height: 140px; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-description { font-size: 0.95rem; }
+}
+
+/* ========== FOOTER STYLING ========== */
+.site-footer {
+  background: rgba(255, 255, 255, 0.02); /* lighter background */
+  backdrop-filter: blur(6px); /* softer blur effect */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  padding: 7px; /* 🔹 Reduce this padding to make footer height smaller */
+}
+
+/* Profile Picture - Smaller & Minimal */
+.footer-brand-pic {
+  width: 40px;   /* 🔹 Controls profile pic width */
+  height: 40px;  /* 🔹 Controls profile pic height */
+  border-radius: 50%;
+  padding: 2px;
+  background: transparent; /* no gradient background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none; /* no shadow frame */
+  transition: transform 0.2s ease;
+}
+
+.footer-brand-pic:hover {
+  transform: scale(1.05); /* small zoom hover effect */
+}
+
+.footer-profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e6eef6; /* thin white border */
+}
+
+/* Footer Text */
+.footer-title {
+  font-size: 0.9rem; /* 🔹 Adjust text size if needed */
+  font-weight: 700;
+  color: #e6eef6;
+}
+
+.footer-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.25s, transform 0.2s;
+}
+
+.footer-link:hover {
+  color: #7c3aed;
+  transform: translateY(-1px);
+}
+
+/* Social Icons - Minimal */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* 🔹 Smaller icons */
+  height: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  color: #e6eef6;
+  transition: all 0.3s ease;
+  font-size: 0.9rem; /* icon size */
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+  color: #fff;
+}
+
+/* Footer Bottom Text */
+.footer-bottom {
+  font-size: 0.8rem; /* 🔹 Smaller bottom text */
+  color: #9aa4b2;
+  border-color: rgba(255, 255, 255, 0.05);
+  margin-top: 10px; /* 🔹 Reduce margin for tighter spacing */
+}
+
+/* Back-to-top Button - Minimal */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  width: 35px; /* 🔹 Smaller button */
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  font-weight: bold;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .site-footer {
+    text-align: center;
+    padding: 20px 0; /* 🔹 Even smaller padding on mobile */
+  }
+
+  .socials {
+    justify-content: center !important;
+  }
+}
+

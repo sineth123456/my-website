@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Education — Sineth Deshan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/navbar.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg,#0f1724,#1e293b);
+    color: #e6eef6;
+    padding-top: 80px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    background: rgba(15, 23, 36, 0.85);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .navbar-brand { font-weight: 700; }
+  .nav-link { color: #e6eef6 !important; }
+  .nav-link.active { color: #7c3aed !important; }
+
+  /* Hero */
+  .education-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .education-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg,#7c3aed,#5b21b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+  }
+  .education-hero p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #cbd5e1;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s ease 0.5s;
+  }
+
+  /* Section Cards */
+  .edu-section {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .edu-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.3);
+  }
+  .edu-section h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e6eef6;
+    margin-bottom: 0.5rem;
+  }
+  .edu-section p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+  }
+</style>
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark py-3 px-4 shadow-sm">
+    <a class="navbar-brand" href="index.html">Sineth Deshan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-3">
+          <div class="navbar-profile">
+            <img src="images/MyPP.jpg" alt="Sineth Deshan" class="nav-profile-pic">
+            <span class="status-badge"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+<main class="container my-5">
+
+  <!-- Hero Section -->
+  <div class="education-hero">
+    <h1 id="edu-title">My Education</h1>
+    <p id="edu-subtitle">A detailed overview of my academic background, skills, and future goals.</p>
+  </div>
+<!-- University Education 🎓 -->
+<div class="edu-section">
+  <h3>University 🎓</h3>
+  <p>
+    <strong>Degree:</strong> Bachelor of Science Honours in Information Technology 🎓<br>
+    <strong>Specialization:</strong> Information Technology 💻<br>
+    <strong>University:</strong> Sri Lanka Institute of Information Technology <br>
+    <strong>Location:</strong> Private university in Malabe, Sri Lanka 
+  </p>
+</div>
+
+<!-- High School & Pre-University 🏫 -->
+<div class="edu-section">
+  <h3>High School & Pre-University 🏫</h3>
+  <p>
+    <strong>School:</strong> Methodist Central College - Hakmana <br>
+    <strong>Period:</strong> (2012 - 2022) <br>
+    <strong>Achievements:</strong> Top grades in Mathematics  and Computer Science .
+  </p>
+</div>
+
+<!-- Certifications 📜 -->
+<div class="edu-section">
+  <h3>Certifications 📜</h3>
+  <p>
+    React.js ⚛️, Node.js 🟢, Data Science 📊 courses on Coursera, Udemy, and other online platforms.
+  </p>
+</div>
+
+<!-- Skills & Expertise 💻 -->
+<div class="edu-section">
+  <h3>Skills & Expertise 💻</h3>
+  <p>
+    Proficient in JavaScript 🟨, React ⚛️, Node.js 🟢, MongoDB 🍃, CSS 🎨, HTML 🟥, and Python 🐍.<br>
+    Strong problem-solving  and teamwork  skills.
+  </p>
+</div>
+
+<!-- Internships & Training 💼 -->
+<div class="edu-section">
+  <h3>Internships & Training 💼</h3>
+  <p>
+     Currently seeking internship opportunities to gain hands-on experience in web development  and modern IT technologies .<br>
+    Eager to apply skills in a professional IT environment .
+  </p>
+</div>
+
+<!-- Future Learning Goals 🎯 -->
+<div class="edu-section">
+  <h3>Future Learning Goals 🎯</h3>
+  <p>
+   Plan to build expertise in full-stack development , cloud computing , and AI/ML technologies  with the ultimate goal of starting my own IT company .
+  </p>
+</div>
+
+
+</main>
+
+<footer class="text-center py-4" style="color:#9aa4b2;">Made with ♥ • Sineth Deshan</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Hero Animation -->
+<script>
+window.addEventListener('load', () => {
+  document.getElementById('edu-title').style.opacity = 1;
+  document.getElementById('edu-title').style.transform = 'translateY(0)';
+  document.getElementById('edu-subtitle').style.opacity = 1;
+  document.getElementById('edu-subtitle').style.transform = 'translateY(0)';
+});
+</script>
+
+<!-- Navbar Hide on Scroll -->
+<script>
+let lastScrollTop = 0;
+const navbar = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll > lastScrollTop && currentScroll > 50) {
+    // scroll down
+    navbar.style.transform = 'translateY(-100%)';
+  } else {
+    // scroll up
+    navbar.style.transform = 'translateY(0)';
+  }
+
+  lastScrollTop = currentScroll;
+});
+</script>
+
+</body>
+</html>

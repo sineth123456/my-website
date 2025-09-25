@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Sineth Deshan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 px-4 shadow-sm">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <li class="nav-item ms-3">
+          <div class="navbar-profile">
+            <img src="images/MyPP.jpg" alt="Sineth Deshan" class="nav-profile-pic rounded-circle">
+            <span class="status-badge"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= HERO + GLASS CARD ================= -->
+  <section class="container my-5">
+    <div class="row align-items-center gy-4">
+
+      <!-- Profile Image -->
+      <div class="col-md-4 text-center">
+        <div class="profile-pic-glass mx-auto">
+          <img src="images/MyPP.jpg" alt="Sineth Deshan" class="img-fluid rounded-circle">
+        </div>
+      </div>
+
+      <!-- Hero Text + Glass Card -->
+      <!-- Hero Text -->
+<div class="hero-text">
+  <h1 class="hero-title fade-in">Hi, I'm <span class="highlight">Sineth Deshan</span></h1>
+  <p class="hero-subtitle fade-in delay-1">Full-stack Developer • Matara, Sri Lanka</p>
+  <p class="hero-description fade-in delay-2">
+    I create modern web applications using <span class="highlight">MERN stack</span> and develop efficient SaaS tools. 
+    <br>Focused on clean interfaces, robust backend systems, and delivering effective solutions.
+  </p>
+</div>
+
+
+        <!-- Animated Glass Card with Education -->
+        <div class="glass-card fade-in delay-3 mt-4 p-4">
+          <p><strong>🎓 Education:</strong></p>
+          <p>🎯 Bachelor of Science Honours in Information Technology</p>
+          <p>💻 Specialized in Information Technology</p>
+          <p>🏫 Sri Lanka Institute of Information Technology (SLIIT), Malabe</p>
+          <p>📍 Private University</p>
+
+          <hr class="my-3" style="border-color: #555;">
+
+          <p><strong>Bio:</strong> Enthusiastic developer passionate about building user-friendly web applications.</p>
+          <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB, REST APIs</p>
+          <p><strong>Experience:</strong> 2+ years developing web apps and mini SaaS tools.</p>
+        </div>
+
+        <!-- Call to Action Button -->
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer py-4 text-light">
+  <div class="container">
+
+    <div class="row align-items-center justify-content-between text-center text-md-start">
+      <!-- Left: Profile / Description -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <p>Sineth Deshan — Full-stack developer focused on clean UI & reliable backends. Based in Matara, Sri Lanka.</p>
+      </div>
+
+      <!-- Center: Contact Info -->
+      <div class="col-md-3 mb-3 mb-md-0">
+        <h6 class="footer-title">Contact</h6>
+        <p class="mb-1"><strong>Email:</strong> <a href="mailto:sinethdeshan7@gmail.com" class="footer-link">sinethdeshan7@gmail.com</a></p>
+        <p class="mb-1"><strong>Phone:</strong> <a href="tel:+94123456789" class="footer-link">071 465 99 66</a></p>
+      </div>
+
+      <!-- Right: Social Links -->
+      <div class="col-md-3">
+        
+        <div class="socials d-flex gap-2 justify-content-center justify-content-md-end">
+          <a href="#" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center mt-3 pt-3 border-top">
+      <small>© <span id="year"></span> Sineth Deshan • Built with ♥</small>
+    </div>
+  </div>
+</footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
